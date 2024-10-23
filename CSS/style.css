@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #0582ca;
+    color: #333;
+}
+
+h2 {
+    color: #000000; /* A nice blue color for headings */
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile Picture */
+#profilepic {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%; /* Makes it circular */
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+}
+
+/* Container for Sections */
+div {
+    background: #fffffc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #profilepic {
+        width: 120px;
+        height: 120px;
+    }
+
+    div {
+        margin: 10px;
+    }
+}
