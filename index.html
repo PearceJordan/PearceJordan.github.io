@@ -19,13 +19,18 @@
           font-size: 3.5rem;
         }
       }
+
     </style>
 
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Button</title>
+    <link rel="stylesheet" href="css/custom.scss">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+  <body class="h-100 text-center text-white bg-dark">
+  <div id="cover" class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
      <div>
       <div class="card m-2" style="width: 8rem; border: 5px solid #ccc;">
@@ -40,20 +45,21 @@
     <h1>Pearce Jordan</h1>
     <p class="lead">I'm a mechanical engineering student at Oregon State University Cascades who's passionate about clean energy systems.</p>
     <div>
-      <br>
     <p class="lead">
       <h4>Contact Me:</h4>
       <a href="mailto:pjb.jordan@gmail.com" target="_blank" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-danger">Email</a>
       <a href="https://github.com/PearceJordan" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-danger">Github</a>
       <a href="https://app.joinhandshake.com/profiles/57167762" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-danger">Handshake</a>
       <a href="https://www.linkedin.com/in/pearce-jordan-51a809332/" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-danger">Linkedin</a>
+      <hr class="featurette-divider">
       
     </p>
   </div>
+</div>
    <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
-   <br><br><br>
+   <br>
 <div>
   <div class="container marketing">
     <hr class="featurette-divider">
@@ -66,21 +72,47 @@
         <h2>Education</h2>
         <p>Associate of Arts Oregon Transfer from PCC.
           Currently studying mechanical engineering at OSU.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+
+          <button class="dropdown-btn" onclick="toggleDropdown()">View Details &raquo;</button>
+
+          <div id="dropdown" class="dropdown-content">
+            <a href="mailto:pjb.jordan@gmail.com">Option 1</a>
+            <a href="https://app.joinhandshake.com/profiles/57167762">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+          <script src="script.js"></script>
+
+
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
         <h2>Professional Experience</h2>
         <p>Completion of the ACE mentorship program.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <button class="dropdown-btn" onclick="toggleDropdown()">View Details &raquo;</button>
+
+          <div id="dropdown" class="dropdown-content">
+            <a href="mailto:pjb.jordan@gmail.com">Option 1</a>
+            <a href="https://app.joinhandshake.com/profiles/57167762">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+          <script src="script.js"></script>
+
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
         <h2>Awards</h2>
         <p>I earned my associates degree from PCC with presidential honors, and am currently a member of the NSLS.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <button class="dropdown-btn" onclick="toggleDropdown()">View Details &raquo;</button>
+
+          <div id="dropdown" class="dropdown-content">
+            <a href="mailto:pjb.jordan@gmail.com">Option 1</a>
+            <a href="https://app.joinhandshake.com/profiles/57167762">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+          <script src="script.js"></script>
+          
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
