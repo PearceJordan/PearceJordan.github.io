@@ -6,6 +6,12 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="css/custom.css">
     <style>
+      .solid-divider {
+        border-top: 50px solid #1a5e63;
+         margin: 0px 0;
+         box-shadow: 10px 10px 5px black;
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -43,18 +49,26 @@
     
   <main class="px-3">
     <h1>Pearce Jordan</h1>
-    <p class="lead">I'm a mechanical engineering student at Oregon State University Cascades who's passionate about clean energy systems.</p>
+    <h4 class="lead">I'm a mechanical engineering student at Oregon State University Cascades who's passionate about clean energy systems.</h4>
     <div>
     <p class="lead">
       <h4>Contact Me:</h4>
-      <a href="mailto:pjb.jordan@gmail.com" target="_blank" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-danger">Email</a>
-      <a href="https://github.com/PearceJordan" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-danger">Github</a>
-      <a href="https://app.joinhandshake.com/profiles/57167762" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-danger">Handshake</a>
-      <a href="https://www.linkedin.com/in/pearce-jordan-51a809332/" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-danger">Linkedin</a>
-      <hr class="featurette-divider">
-      
+      <a href="mailto:pjb.jordan@gmail.com" target="_blank" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-warning">Email</a>
+      <a href="https://github.com/PearceJordan" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-warning">Github</a>
+      <a href="https://app.joinhandshake.com/profiles/57167762" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-warning">Handshake</a>
+      <a href="https://www.linkedin.com/in/pearce-jordan-51a809332/" target="_blank" class="btn btn-lg btn-secondary fw-bold border-white bg-warning">Linkedin</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      </div>
     </p>
   </div>
+  <div class = "solid-divider"></div>
+  <br>
+  <br>
+  <br>
+  <br>
 </div>
    <!-- Marketing messaging and featurettes
   ================================================== -->
@@ -62,7 +76,6 @@
    <br>
 <div>
   <div class="container marketing">
-    <hr class="featurette-divider">
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
@@ -70,15 +83,15 @@
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
         <h2>Education</h2>
-        <p>Associate of Arts Oregon Transfer from PCC.
-          Currently studying mechanical engineering at OSU.</p>
+      
 
-          <button class="dropdown-btn" onclick="toggleDropdown()">View Details &raquo;</button>
+          <button class="dropdown-btn" onclick="toggleDropdown('dropdown1')">View Details &raquo;</button>
 
-          <div id="dropdown" class="dropdown-content">
-            <a href="mailto:pjb.jordan@gmail.com">Option 1</a>
-            <a href="https://app.joinhandshake.com/profiles/57167762">Option 2</a>
-            <a href="#">Option 3</a>
+          <div id="dropdown1" class="dropdown-content">
+            <ul style = "color: black;"> 
+              <li>Associate of Arts degree from Portland Community College.</li>
+              <li>Bacchellors degree in mechanical engineering ongoing at Oregon State University Cascades.  </li>
+            </ul>
           </div>
           <script src="script.js"></script>
 
@@ -88,13 +101,12 @@
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
         <h2>Professional Experience</h2>
-        <p>Completion of the ACE mentorship program.</p>
-        <button class="dropdown-btn" onclick="toggleDropdown()">View Details &raquo;</button>
+        <button class="dropdown-btn" onclick="toggleDropdown('dropdown2')">View Details &raquo;</button>
 
-          <div id="dropdown" class="dropdown-content">
-            <a href="mailto:pjb.jordan@gmail.com">Option 1</a>
-            <a href="https://app.joinhandshake.com/profiles/57167762">Option 2</a>
-            <a href="#">Option 3</a>
+          <div id="dropdown2" class="dropdown-content">
+            <ul style = "color: black">
+              <li>Completion of the ACE mentorship program.</li>
+            </ul> 
           </div>
           <script src="script.js"></script>
 
@@ -103,23 +115,50 @@
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
         <h2>Awards</h2>
-        <p>I earned my associates degree from PCC with presidential honors, and am currently a member of the NSLS.</p>
-        <button class="dropdown-btn" onclick="toggleDropdown()">View Details &raquo;</button>
+        <button class="dropdown-btn" onclick="toggleDropdown('dropdown3')">View Details &raquo;</button>
 
-          <div id="dropdown" class="dropdown-content">
-            <a href="mailto:pjb.jordan@gmail.com">Option 1</a>
-            <a href="https://app.joinhandshake.com/profiles/57167762">Option 2</a>
-            <a href="#">Option 3</a>
+          <div id="dropdown3" class="dropdown-content">
+            <ul style = "color: black">
+              <li>Graduated from Portland Community College with presidential honors.</li>
+              <li>Membership in the NSLS.</li>
+            </ul>
           </div>
           <script src="script.js"></script>
-          
+
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
+<!--close dropdowns on click outside dropdown content-->
+<script>
+  // Close any open dropdown when clicking outside
+  document.addEventListener("click", function(event) {
+      var dropdowns = document.querySelectorAll(".dropdown-content");
+      
+      dropdowns.forEach(function(dropdown) {
+          var dropdownButton = dropdown.previousElementSibling; // Get the button that toggles the dropdown
+          if (!dropdown.contains(event.target) && !dropdownButton.contains(event.target)) {
+              dropdown.style.display = "none";
+          }
+      });
+  });
 
+  // Toggle the dropdown visibility when the button is clicked
+  var dropdownButtons = document.querySelectorAll(".dropdown button");
+  dropdownButtons.forEach(function(button) {
+      button.addEventListener("click", function(event) {
+          var dropdown = this.nextElementSibling; // The associated dropdown content
+          dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+          event.stopPropagation(); // Prevent the click event from propagating to document
+      });
+  });
+  </script>
     <!-- START THE FEATURETTES -->
 
-   
+   <hr class="featurette-divider">
+   <h1>Personal Projects</h1>
+   <br>
+   <br>
+
 
     <div class="row featurette">
       <div class="col-md-7">

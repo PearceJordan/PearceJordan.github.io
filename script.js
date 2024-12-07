@@ -10,8 +10,8 @@ function toggleDropdown() {
     }
 }
 // Function to toggle the dropdown
-function toggleDropdown() {
-    var dropdown = document.getElementById("dropdown");
+function toggleDropdown(dropdownId) {
+    var dropdown = document.getElementById(dropdownId);
     
     // Toggle the display of the dropdown content
     if (dropdown.style.display === "none" || dropdown.style.display === "") {
